@@ -8,7 +8,7 @@ int main()
     cin.tie(NULL);
     ll n, k;
     cin>>n>>k;
-    ll a[n];
+    vector<ll> a(n);
     for(int i=0; i<n; i++)
     {
         cin>>a[i];
@@ -33,6 +33,8 @@ int main()
             }
         }
         cout<<idx+1<<'\n';
+        // auto idx=upper_bound(a.begin(), a.end(), key);
+        // cout<<idx-a.begin()<<'\n';
     }
     
     return 0;
